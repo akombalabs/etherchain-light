@@ -5,9 +5,9 @@ var net = require('net');
 var config = function () {
   
   this.logFormat = "combined";
-  this.ipcPath = process.env["HOME"] + "/.local/share/io.parity.ethereum/jsonrpc.ipc";
+  // this.ipcPath = process.env["HOME"] + "/.local/share/io.parity.ethereum/jsonrpc.ipc";
 //   this.provider = new web3.providers.IpcProvider(this.ipcPath, net);
-  this.provider = new web3.providers.HttpProvider('http://localhost:8450');
+  this.provider = new web3.providers.HttpProvider('http://192.168.0.1:8450');
   
   this.bootstrapUrl = "https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/yeti/bootstrap.min.css";
   
